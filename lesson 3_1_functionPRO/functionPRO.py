@@ -23,3 +23,10 @@ def add_tests(name, results = None):
     return results
 print(add_tests("test_registration"))
 print(add_tests("test_login"))
+
+
+def create_user2(username,email,role):
+    return f"{username},{email},{role}"
+print(create_user2("Kris","test@gm.com","teamlead"))
+
+print(create_user2(role = "Project", username = "Alex", email = "test2@gm.com"))
